@@ -1,0 +1,37 @@
+<div *ngFor="let msg of messages">
+  <div>
+
+    <div class="row">
+      <div>
+        <mat-card class="msgowner">
+          <div class="msgowner" *ngIf="msg.uid===Id; else msgnotown">
+            {{msg.uid}}
+
+          </div>
+        </mat-card>
+      </div>
+      <div>
+        <ng-template #msgnotown>
+          
+            <div class="msgnotown">
+              {{msg.uid}}
+
+            </div>
+          
+        </ng-template>
+      </div>
+      <div>
+        <mat-card class="mtcontent">
+          <div class="msgcontent">
+            {{msg.content}}
+          </div>
+        </mat-card>
+      </div>
+    </div>
+
+  </div>
+
+
+
+
+</div>

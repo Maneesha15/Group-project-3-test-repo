@@ -1,0 +1,14 @@
+<div class="container">
+    <mat-card>
+  
+        <div>
+      <app-chat-header></app-chat-header>
+      </div>
+      <div>
+        <app-message [nannyid]="nannyid" [customerid]="customid" class="msg" ></app-message>
+        </div>
+      <div>
+        <app-chat-form [nannyid]="nannyid" [customerid]="customid" ></app-chat-form>
+      </div>
+      </mat-card>
+</div>
